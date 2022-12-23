@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="/css/events/categoryList.css" type="text/css">
+
+<form action="/events/categoryList" method="get" id="ocultar">
+
+    <div id="contenedor">
+        <div id="titulo">
+            <p>CATEGORÍAS</p>
+        </div>
+
+        <div class="row">
+            {{#each list}}
+            <div id="tarjeta">
+                <div id="imagen">
+                    <img src="/img/category/{{imageCategory}}">
+                </div>
+
+                <div id="nombre">
+                    <p>{{nameCategory}}</p>
+                </div>
+
+                <div id="boton">
+                    <a href="/events/add/{{idCategory}}">
+                        <div id="iconoGuardar">
+                            <img src="/img/icons/white/calendar.png">
+                        </div>
+                        <p> Agregar Evento </p>
+                    </a>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</form>

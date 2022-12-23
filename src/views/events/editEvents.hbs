@@ -1,0 +1,102 @@
+<link rel="stylesheet" href="/css/events/eventoEdit.css" type="text/css">
+
+<form action="/events/edit/{{idEvent}}" name="eventoEnviar" method="post" id="ocultar">
+    <div id="contenedor">
+        {{#each list}}
+
+        <!-- Aquí comienza la seccion de imagen -->
+        <div id="imagen">
+            <label>Foto del Evento</label>
+            <div id="cambioImagen">
+                <img src="/img/user/NoImagen.jpg" id="imagenPrevisualizacion">
+            </div>
+
+            <div id="imagenBase">
+                <img src="/img/events/{{imageEvent}}" id="imagenPrevisualizacion">
+            </div>
+            <input type="file" name="imageEvent" id="seleccionArchivos" accept="image/*">
+        </div>
+        <!-- Aquí termina la sección de imagen -->
+
+        <!-- Aquí comienza el formulario -->
+        <div id="formulario">
+            <div id="titulo">
+                <p>Edición del Evento: {{idEvent}}</p>
+                <input type="text" name="idImagen" value="{{idEvent}}" readonly>
+            </div>
+
+            <div id="Nombre">
+                <label>Nombre Evento:</label>
+                <input type="text" name="nameEvent" value="{{nameEvent}}">
+            </div>
+
+            <div id="descripcion">
+                <label>Descripción:</label>
+                <textarea name="descriptionEvent">{{descriptionEvent}}</textarea>
+            </div>
+
+            <div id="modalidad">
+                <label>Modalidad:</label>
+                <select name="idModality">
+                    <option>Seleccione una Modalidad</option>
+                    <option value="{{idModality}}">{{nameModality}}</option>
+                </select>
+            </div>
+
+            <div id="Categoria">
+                <label>Categoría:</label>
+                <select name="category">
+                    <option>Seleccione una Categoría</option>
+                    <option value="{{idCategory}}">{{nameCategory}}</option>
+                </select>
+            </div>
+
+            <div id="SubCategory">
+                <label>Sub Categoria:</label>
+                <select name="subCategory">
+                    <option>Seleccione una Sub-Categoría</option>
+                    <option value="{{idCategoryDetails}}">{{nameCategoryDetails}}</option>
+                </select>
+            </div>
+
+            <div id="horaInicio">
+                <label>Hora de Inicio:</label>
+                <input type="time" name="hourInitEvent" value="{{hourInitEvent}}" />
+            </div>
+
+            <div id="horaFin">
+                <label>Hora Final:</label>
+                <input type="time" name="hourFinishEvent" value="{{hourFinishEvent}}" />
+            </div>
+
+            <div id="fechaInicio">
+                <label>Fecha de Inicio:</label>
+                <input type="date" name="dateInitEvent" value="{{dateInitEvent}}" />
+            </div>
+
+            <div id="fechaFin">
+                <label>Fecha Final:</label>
+                <input type="date" name="dateFinishEvent" value="{{dateFinishEvent}}" />
+            </div>
+
+            <div id="precio">
+                <label>Precio:</label>
+                <input type="text" name="priceEvents" value="00.00" />
+            </div>
+        </div>
+
+        <div id="boton">
+            <button type="submit">
+                <div id="iconoGuardar">
+                    <img src="/img/icons/white/save.png">
+                </div>Actualizar
+            </button>
+        </div>
+        {{/each}}
+    </div>
+</form>
+
+<script src="/js/numero.js"></script>
+<script src="/js/previsualizacion.js"></script>
+<script src="/js/events/evento.js"></script>
+<script src="/js/navegacion.js"></script>

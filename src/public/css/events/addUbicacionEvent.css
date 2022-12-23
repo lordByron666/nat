@@ -1,0 +1,203 @@
+#contenedor {
+    max-width: 90%;
+    max-height: 80%;
+    position: absolute;
+    top: 14.5%;
+    left: 5%;
+    text-align: center;
+}
+
+#titulo {
+    position: absolute;
+    width: 100%;
+    top: 2%;
+}
+
+#titulo input {
+    font-weight: bolder;
+    position: absolute;
+    top: -2.5%;
+    left: 57.5%;
+    width: 5%;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#titulo input:focus {
+    border-color: transparent;
+}
+
+/*Aquí comienza la seccion de imagen*/
+#imagen {
+    position: absolute;
+    right: 5%;
+    top: 15%;
+    width: 100%;
+    height: 100%;
+    max-width: 35%;
+    max-height: 50%;
+    background-color: rgb(248, 243, 235);
+    border-radius: 50px;
+}
+
+#imagen #cambioImagen {
+    width: 100%;
+    height: 100%;
+    max-width: 80%;
+    max-height: 70%;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+#imagen #cambioImagen #imagenPrevisualizacion {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#imagen label {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 10%;
+    color: black;
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    text-align: center;
+}
+
+/*Aquí comienza formulario*/
+#formulario {
+    background-color: rgb(248, 243, 235);
+    width: 50%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    border-radius: 75px;
+}
+
+#provincia,
+#ciudad,
+#parroquia,
+#lugar,
+#seccion,
+#numeroZona,
+#linkEvento {
+    line-height: center;
+    width: 100%;
+    height: 100%;
+    max-width: 90%;
+    max-height: 12%;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+}
+
+#ciudad {
+    top: 22.5%;
+}
+
+#parroquia {
+    top: 35%;
+}
+
+#lugar {
+    top: 47.5%;
+}
+
+#seccion {
+    top: 60%;
+}
+
+#numeroZona {
+    top: 72.5%;
+}
+
+#linkEvento {
+    top: 85%;
+}
+
+#provincia label,
+#ciudad label,
+#parroquia label,
+#lugar label,
+#seccion label,
+#numeroZona label,
+#linkEvento label {
+    text-align: center;
+    color: black;
+    width: 100%;
+    height: 100%;
+    max-width: 27.5%;
+    max-height: 100%;
+    line-height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+#provincia select,
+#ciudad select,
+#parroquia select,
+#lugar input,
+#seccion input,
+#numeroZona input,
+#linkEvento input {
+    width: 100%;
+    height: 100%;
+    max-width: 70%;
+    max-height: 60%;
+    position: absolute;
+    top: 20%;
+    right: 0%;
+}
+
+/*Boton*/
+#boton {
+    position: absolute;
+    bottom: 15%;
+    right: 15%;
+    width: 15%;
+    height: 8.50%;
+}
+
+#boton button {
+    text-align: right;
+    background-color: #0097e7;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#iconoGuardar {
+    background-color: #1232bd;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    max-width: 10%;
+    max-height: 100%;
+    margin-left: 0%;
+    margin-top: 0%;
+}
+
+#iconoGuardar img {
+    max-width: 50%;
+    max-height: 50%;
+    margin-top: 25%;
+    margin-left: 25%;
+}
+
+#iconoGuardar p {
+    width: 100%;
+    height: 100%;
+    max-width: 75%;
+    max-height: 100%;
+    margin-right: 0%;
+    margin-top: 0%;
+}

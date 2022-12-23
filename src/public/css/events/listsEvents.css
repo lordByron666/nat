@@ -1,0 +1,158 @@
+#contenedor {
+    height: 220%;
+    max-width: 98%;
+    max-height: 220%;
+    position: absolute;
+    top: 15%;
+    left: 1%;
+    text-align: center;
+}
+
+#Carrucel {
+    position: absolute;
+    width: 80%;
+    top: 5%;
+    left: 10%;
+    height: 20%;
+}
+
+#eventosPage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#Registro {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#titulo,
+#tituloPagados,
+#tituloGratuito {
+    width: 100%;
+    height: 100%;
+    max-height: 7.5%;
+    position: absolute;
+    top: 2%;
+    left: 0%;
+}
+
+#tituloPagados {
+    top: 26.5%;
+}
+
+#tituloGratuito {
+    top: -18%;
+}
+
+#titulo p,
+#tituloPagados p,
+#tituloGratuito p {
+    background-color: rgb(248, 243, 235);
+    color: black;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#eventosPagados {
+    position: absolute;
+    top: 30%;
+    background-color: rgb(248, 243, 235);
+    width: 100%;
+    height: 21.5%;
+}
+
+#eventosGratis {
+    position: absolute;
+    top: 65%;
+    background-color: rgb(248, 243, 235);
+    width: 100%;
+    height: 21.5%;
+}
+
+#tarjetas {
+    width: 100%;
+    height: 100%;
+    max-width: 20%;
+    max-height: 100%;
+    margin-top: 2%;
+    margin-left: 1.5%;
+    border-radius: 25px;
+    background-color: rgb(248, 243, 235);
+    border: 5px solid black;
+}
+
+#contenedor button {
+    top: 100%;
+    width: 10%;
+}
+
+#imagenEvento {
+    width: 100%;
+    height: 100%;
+    max-width: 80%;
+    max-height: 130px;
+    margin-left: 10%;
+}
+
+#imagenEvento img {
+    width: 100%;
+    height: 100%;
+    max-width: 80%;
+    max-height: 130px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#contenedorFooder {
+    position: absolute;
+    top: 250%;
+}
+
+#favorito {
+    margin-left: 1%;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+}
+
+#ubicaion {
+    margin-top: -12.5%;
+    margin-left: 40%;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+}
+
+#favorito button,
+#ubicaion button,
+#añadirBoleto button {
+    width: 17%;
+    height: 100%;
+}
+
+#añadirBoleto {
+    margin-top: -12.5%;
+    margin-left: 82%;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+}
+
+#ubicaion button img {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.row {
+    gap: 1%;
+}

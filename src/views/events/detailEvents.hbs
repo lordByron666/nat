@@ -1,0 +1,91 @@
+<link rel="stylesheet" href="/css/events/detailEvents.css" />
+
+{{#each listDetail}}
+<form action="/events/detail/{{idEvent}}" method="get" id="ocultar">
+
+    <div id="contenedor">
+        <!-- Aquí comienza la seccion de imagen -->
+        <div id="imagen">
+            <label>Foto del Evento</label>
+            <img src="/img/events/{{imageEvent}}" alt="">
+            <!-- Aquí termina la sección de imagen -->
+
+            <!-- Aquí comienza la ubicacion -->
+            <div id="ubicacion">
+                {{#each ubicationEvent}}
+                <div id="locacion">
+                    <p>{{localeUbicationEvent}}</p>
+                </div>
+
+                <div id="zona">
+                    <p>{{sectionUbicationEvent}}</p>
+                </div>
+
+                <div id="numeroUbicacion">
+                    <p>{{numberUbicationEvent}}</p>
+                </div>
+
+                <div id="linkEvento">
+                    <p>{{linkUbicationEvent}}</p>
+                </div>
+                {{/each}}
+            </div>
+            <!-- Aquí termina la ubicacion -->
+        </div>
+
+        <!-- Aquí comienza el formulario -->
+        <div id="formulario">
+            <div id="Nombre">
+                <label>Nombre del Evento:</label>
+                <p>{{nameEvent}}</p>
+            </div>
+
+            <div id="descripcion">
+                <label>Descripción:</label>
+                <p>{{descriptionEvent}}</p>
+            </div>
+
+            <div id="precio">
+                <label>Precio:</label>
+                <p>{{priceEvents}}</p>
+            </div>
+
+            <div id="horaInicio">
+                <label>Hora de Inicio:</label>
+                <p>{{hourInitEvent}}</p>
+            </div>
+
+            <div id="horaFin">
+                <label>Hora Final:</label>
+                <p>{{hourFinishEvent}}</p>
+            </div>
+
+            <div id="fechaInicio">
+                <label>Fecha de Inicio:</label>
+                <p>{{dateInitEvent}}</p>
+            </div>
+
+            <div id="fechaFin">
+                <label>Fecha Final:</label>
+                <p>{{dateFinishEvent}}</p>
+            </div>
+
+            <div id="estado">
+                <p>{{stateEvent}}</p>
+            </div>
+
+        </div>
+
+        <div id="editar">
+            <a href="/events/edit/{{idEvent}}">
+                <button type="button">
+                    <div id="iconoEditar">
+                        <img src="/img/icons/white/edit.png">
+                    </div>Editar
+                </button>
+            </a>
+        </div>
+        {{/each}}
+        <!-- Aquí termina el formulario -->
+    </div>
+</form>

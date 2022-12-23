@@ -1,0 +1,264 @@
+#contenedor {
+    max-width: 90%;
+    max-height: 80%;
+    position: absolute;
+    top: 14.5%;
+    left: 5%;
+    text-align: center;
+}
+
+#titulo {
+    top: 2%;
+}
+
+#titulo p {
+    background-color: transparent;
+}
+
+#titulo input {
+    display: none;
+}
+
+/*Aquí comienza la seccion de imagen*/
+#imagen {
+    position: absolute;
+    right: 5%;
+    top: 15%;
+    width: 100%;
+    height: 100%;
+    max-width: 15%;
+    max-height: 50%;
+    background-color: rgb(248, 243, 235);
+    border-radius: 50px;
+}
+
+#imagen #cambioImagen {
+    width: 100%;
+    height: 100%;
+    max-width: 60%;
+    max-height: 50%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+#imagen #cambioImagen #imagenPrevisualizacion {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#imagen label {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 10%;
+    color: black;
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imagen input {
+    position: absolute;
+    top: 77%;
+    left: 10%;
+    width: 79%;
+}
+
+/*Aquí comienza formulario*/
+#formulario {
+    background-color: rgb(248, 243, 235);
+    width: 70%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    border-radius: 75px;
+}
+
+#Nombre,
+#descripcion,
+#modalidad,
+#Categoria,
+#SubCategory,
+#horaInicio,
+#horaFin,
+#fechaInicio,
+#fechaFin,
+#precio,
+#precioEleccion {
+    line-height: center;
+    width: 100%;
+    height: 100%;
+    max-width: 42.5%;
+    max-height: 12%;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+}
+
+#Nombre,
+#descripcion {
+    max-width: 90%;
+}
+
+#descripcion {
+    top: 25%;
+}
+
+#modalidad,
+#precio,
+#precioEleccion {
+    top: 45%;
+}
+
+#Categoria,
+#SubCategory {
+    top: 57.5%;
+}
+
+#fechaInicio,
+#fechaFin {
+    top: 70%;
+}
+
+#horaInicio,
+#horaFin {
+    top: 82.5%;
+}
+
+#SubCategory,
+#horaFin,
+#fechaFin,
+#precio,
+#precioEleccion {
+    left: 52.5%;
+}
+
+#Nombre label,
+#descripcion label,
+#modalidad label,
+#Categoria label,
+#SubCategory label,
+#horaInicio label,
+#horaFin label,
+#fechaInicio label,
+#fechaFin label,
+#precio label,
+#precioEleccion label {
+    text-align: center;
+    width: 100%;
+    height: 150%;
+    max-width: 27.5%;
+    max-height: 100%;
+    line-height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+#Nombre label,
+#descripcion label {
+    max-width: 13.5%;
+}
+
+#descripcion label {
+    max-height: 150%;
+}
+
+#Nombre input,
+#descripcion textarea,
+#modalidad select,
+#Categoria select,
+#SubCategory select,
+#horaInicio input,
+#horaFin input,
+#fechaInicio input,
+#fechaFin input,
+#precio input {
+    width: 100%;
+    height: 100%;
+    max-width: 70%;
+    max-height: 60%;
+    position: absolute;
+    top: 20%;
+    right: 0%;
+}
+
+#primera,
+#segundo {
+    border-color: black;
+    width: 35%;
+    height: 50%;
+    position: absolute;
+    right: 0%;
+    top: 25%;
+}
+
+#primera {
+    right: 35%;
+}
+
+#primera input,
+#segundo input {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    left: -40%;
+    top: 25%;
+}
+
+#Nombre input,
+#descripcion textarea {
+    max-width: 85%
+}
+
+#descripcion textarea {
+    height: 120%;
+    max-height: 120%;
+}
+
+#boton {
+    position: absolute;
+    bottom: 15%;
+    right: 5%;
+    width: 15%;
+    height: 8.50%;
+}
+
+#boton button {
+    text-align: right;
+    border-right: 30px solid transparent;
+    background-color: #0097e7;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#iconoGuardar {
+    background-color: #1232bd;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    max-width: 30%;
+    max-height: 100%;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+}
+
+#iconoGuardar img {
+    max-width: 60%;
+    max-height: 60%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}

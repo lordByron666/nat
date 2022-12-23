@@ -1,0 +1,130 @@
+<link rel="stylesheet" href="/css/events/listsEvents.css" type="text/css">
+
+<div id="contenedor">
+    <div id="titulo">
+        <p>Eventos</p>
+    </div>
+
+    <div id="Carrucel">
+        {{#if user}}
+        <div id="eventosPage">
+            {{#each listEventsPagesLimit}}
+            <a href="/events/detail/{{idEvent}}">
+                <img src="/img/events/{{imageEvent}}" name="imagenCarrucel">
+            </a>
+            {{/each}}
+        </div>
+        {{else}}
+        {{#each listEventsPagesLimit}}
+        <div id="Registro">
+            <a href="/login">
+                <img src="/img/events/{{imageEvent}}" name="imagenCarrucel">
+            </a>
+        </div>
+        {{/each}}
+        {{/if}}
+    </div>
+    <form action="/events/list/" method="post" id="ocultar">
+        <div id="tituloPagados">
+            <p>Eventos Pagados</p>
+        </div>
+
+        <div id="eventosPagados">
+            <div class="row">
+                {{#each listEventsPages}}
+                <div id="tarjetas">
+                    <div id="numeroEvento">
+                        <input type="text" name="idEvento" id="" value="{{idEvent}}" readonly>
+                    </div>
+                    <div id="nombreEvento">
+                        <p>{{nameEvent}}</p>
+                    </div>
+
+                    <div id="imagenEvento">
+                        <a href="/events/detail/{{idEvent}}">
+                            <img src="/img/events/{{imageEvent}}">
+                        </a>
+                    </div>
+
+                    <div id="DescripcionEvento">
+                        <p>{{descriptionEvent}}</p>
+                    </div>
+
+                    <div id="PrecioEvento">
+                        <p>{{priceEvents}}</p>
+                    </div>
+
+                    <div id="favorito">
+                        <button type="submit">
+                            <img src="/img/icons/white/favorite.png">
+                        </button>
+                    </div>
+
+                    <div id="ubicaion">
+                        <a href="/events/ubicationEvent/{{idEvent}}"><button type="button">
+                                <img src="/img/icons/white/location.png">
+                            </button>
+                        </a>
+                    </div>
+
+                    <div id="añadirBoleto">
+                        <button type="button">
+                            <img src="/img/icons/white/tickets.png">
+                        </button>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+
+        <div id="eventosGratis">
+            <div id="tituloGratuito">
+                <p>Eventos Gratuitos</p>
+            </div>
+
+            <div class="row">
+                {{#each listEventsFree}}
+                <div id="tarjetas">
+                    <div id="numeroEvento">
+                        <input type="text" name="idEvento" id="" value="{{idEvent}}" readonly>
+                    </div>
+                    <div id="nombreEvento">
+                        <p>{{nameEvent}}</p>
+                    </div>
+                    <div id="imagenEvento">
+                        <a href="/events/detail/{{idEvent}}">
+                            <img src="/img/events/{{imageEvent}}">
+                        </a>
+                    </div>
+                    <div id="DescripcionEvento">
+                        <p>{{descriptionEvent}}</p>
+                    </div>
+                    <div id="PrecioEvento">
+                        <p>{{priceEvents}}</p>
+                    </div>
+                    <div id="favorito">
+                        <button type="submit">
+                            <img src="/img/icons/white/favorite.png">
+                        </button>
+                    </div>
+
+                    <div id="ubicaion">
+                        <a href="/events/ubicationEvent/{{idEvent}}"><button type="button">
+                                <img src="/img/icons/white/location.png">
+                            </button>
+                        </a>
+                    </div>
+
+                    <div id="añadirBoleto">
+                        <button type="button">
+                            <img src="/img/icons/white/tickets.png">
+                        </button>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="/js/events/carrucel.js"></script>

@@ -1,0 +1,109 @@
+#contenedorFooter {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 30%;
+    max-width: 100%;
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+#conocenos {
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 40%;
+    height: 35%;
+    max-width: 100%;
+
+}
+
+#informacion {
+    color: black;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    background: white;
+    text-align: center;
+}
+
+#reglas {
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 40%;
+    height: 35%;
+    max-width: 100%;
+    text-align: center;
+}
+
+#politica {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+}
+
+#politica a {
+    color: white;
+}
+
+#socialMedia {
+    position: absolute;
+    top: 60%;
+    text-align: center;
+    width: 100%;
+    font-style: italic;
+}
+
+#socialMedia label {
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+
+#socialMedia label:hover {
+    color: aquamarine;
+}
+
+#socialMedia a {
+    color: white;
+    left: 5%;
+    font-style: italic;
+    font-size: larger;
+}
+
+#socialMedia label a {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+#copyrigth {
+    color: white;
+    position: absolute;
+    top: 70%;
+    text-align: center;
+    font-size: medium;
+    font-style: italic;
+    width: 100%;
+}
+
+#copyrigth a {
+    color: rgb(221, 78, 102);
+    font-style: normal;
+}
+
+#line hr {
+    background: white;
+}

@@ -1,0 +1,149 @@
+<link rel="stylesheet" href="/css/partials/navegacion.css" type="text/css">
+
+{{#if user}}
+
+<div id="cierra">
+    <a onclick="menus.botonMenu()">
+        <button type="button">
+            <img src="/img/icons/white/menu.png" />
+        </button>
+    </a>
+</div>
+
+<nav id="nav">
+    <div id="homeImg">
+        <a href="/">
+            <img src="/img/logos/Logo_CIty_Boletos con Perfil.png">
+        </a>
+    </div>
+
+    <div id="filtro">
+        <form action="/events/list/" method="get">
+        {{#each eventos}}
+        <button type="button" id="botonFiltro1" onclick="filtros.aparicion1()">Filtro</button>
+        <button type="button" id="botonFiltro2" onclick="filtros.desaparicion1()">Filtro</button>
+        {{/each}}
+        <div id="eleccion1">
+            <button type="button" id="botonFecha1" onclick="filtros.aparicionEleccion1()">Fecha</button>
+            <button type="button" id="botonFecha2" onclick="filtros.desaparicionEleccion1()">Fecha</button>
+            <div id="subEleccion1">
+                {{#each fechaMaxima}}
+                <div id="acendente">
+                    <button type="submit" onclick="filtros.condicion1()"><input type="text" name="maximo" id="maximos" value="{{maximo}}">Más Recientes</button>
+                </div>
+                {{/each}}
+                {{#each fechaInicio}}
+                <div id="desendente">
+                    <button type="submit" onclick="filtros.condicion2()"><input type="text" name="minimo" id="minimos" value="{{minimo}}">Más Antigua</button>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+        <div id="eleccion2">
+            <button type="button" id="botonCategoria1" onclick="filtros.aparicionEleccion2()">Categoria</button>
+             <button type="button" id="botonCategoria2" onclick="filtros.desaparicionEleccion2()">Categoria</button>
+            <div id="subEleccion2">
+                <div id="select1">
+                    <select name="categorias" id="categoria" onclick="filtros.condicion3()">
+                        {{#each categoria}}
+                        <button type="submit"><option value="{{idCategory}}">{{nameCategory}}</option></button>
+                        {{/each}}
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div id="eleccion3">
+            <button type="button" id="botonTipo1" onclick="filtros.aparicionEleccion3()">Tipo Eventos</button>
+            <button type="button" id="botonTipo2" onclick="filtros.desaparicionEleccion3()">Tipo Eventos</button>
+            <div id="subEleccion3">
+                <div id="tipoEvento">
+                    <select name="tipoEvento" id="tipoEventos" onclick="filtros.condicion4()">
+                        {{#each tipoCategoria}}
+                        <option value="{{idModality}}"><button type="submit">{{nameModality}}</button></option>
+                        {{/each}}
+                    </select>
+                </div>
+            </div>
+        </div>
+        </form>
+    </div>
+ 
+    <div id="busqueda" class="search">
+        <input type="text" placeholder="Buscar" name="search">
+        <button type="button">
+            <div id="iconoBuscar">
+                <img src="/img/icons/white/search.png">
+            </div>
+        </button>
+    </div>
+
+    <div id="botonPublicarEvento">
+        <a href="/events/categoryList/{{user.idClient}}">
+            <button type="button">
+                <div id="iconoPublicarEvento">
+                    <img src="/img/icons/white/calendar.png">
+                </div>Publicar Evento
+            </button>
+        </a>
+    </div>
+
+    <div id="botonProfile">
+        <a href="/profile/{{user.idClient}}">
+            <button type="button">
+                <div id="iconoProfile">
+                    <img src="/img/icons/white/user.png">
+                </div>Perfil
+            </button>
+        </a>
+    </div>
+
+    {{else}}
+    <div id="homeImg">
+        <a href="/">
+            <img src="/img/logos/Logo_CIty_Boletos con Perfil.png">
+        </a>
+    </div>
+
+    <div id="busqueda" class="search">
+        <form action="#">
+            <input type="text" placeholder="Buscar" name="search">
+            <button type="button">
+                <div id="iconoBuscar">
+                    <img src="/img/icons/white/search.png">
+                </div>
+            </button>
+        </form>
+    </div>
+
+    <div id="botonPublicarEvento">
+        <a href="/register">
+            <button type="button">
+                <div id="iconoPublicarEvento">
+                    <img src="/img/icons/white/calendar.png">
+                </div>Publicar Evento
+            </button>
+        </a>
+    </div>
+
+    <div id="botonLogin">
+        <a href="/login">
+            <button type="button">
+                <div id="iconoLogin">
+                    <img src="/img/icons/white/login.png">
+                </div>Iniciar Sesión
+            </button>
+        </a>
+    </div>
+</nav>
+
+<div id="hamburguesa">
+    <a onclick="menus.aparicion()">
+        <button type="button">
+            <img src="/img/icons/white/cross.png" />
+        </button>
+    </a>
+</div>
+{{/if}}
+
+<script src="/js/filtro.js"></script>
+<script src="/js/navegacion.js"></script>

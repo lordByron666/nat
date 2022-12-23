@@ -1,0 +1,39 @@
+{
+  "name": "nuevoback",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "CityBoletos": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "connect": "^3.7.0",
+    "connect-flash": "^0.1.1",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "express-handlebars": "^6.0.6",
+    "express-mysql-session": "^2.1.8",
+    "express-session": "^1.17.3",
+    "leaflet": "^1.9.3",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "mysql2-promise": "^0.1.4",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "sequelize": "^6.25.8",
+    "timeago.js": "^4.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "npm-check-updates": "^16.4.2"
+  }
+}

@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="/css/events/ubicationEvents.css" type="text/css">
+
+<form action="/events/ubicationEvent/{{idEvent}}" method="get" id="ocultar">
+    <div id="contenedor">
+        <div id="titulo">
+            <p>Ubicacion de Eventos:</p>
+        </div>
+
+        <div id="Seleccion">
+            <select name="selecion" id="selecion">
+                <option value="-1">Seleccione un Parroquia:</option>
+                <option value="-0.38134698878384543, -78.50365088144788">Amaguaña</option>
+            </select>
+        </div>
+
+        <div id="maps">
+        </div>
+
+        <div id="redesSociales">
+            <div id="Facebook">
+                <div id="imgFacebook">
+                    <img src="/img/user/yo.jpg">
+                </div>
+                <input type="url" name="nameSocialMedia" id="facebook" readonly>
+            </div>
+
+            <div id="Twitter">
+                <div id="imgTwitter">
+                    <img src="/img/user/yo.jpg">
+                </div>
+                <input type="url" name="nameSocialMedia" id="twitter" readonly>
+            </div>
+
+            <div id="Instragram">
+                <div id="imgInstragram">
+                    <img src="/img/user/yo.jpg">
+                </div>
+                <input type="url" name="nameSocialMedia" id="instragram" readonly>
+            </div>
+
+            <div id="Youtube">
+                <div id="imgYoutube">
+                    <img src="/img/user/yo.jpg">
+                </div>
+                <input type="url" name="nameSocialMedia" id="youtube" readonly>
+            </div>
+        </div>
+    </div>
+</form>
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+<script src="/js/events/maps.js"></script>

@@ -1,0 +1,72 @@
+<link rel="stylesheet" href="/css/events/localityPass.css" type="text/css">
+
+ <form action="/events/localityPass/{{idEvent}}" method="get" id="ocultar">
+    <div id="contenedor">
+       <div id="maps"></div>
+
+        <div id="OptionsPlans">
+            <div id="options">
+                <div id="pagado">
+                    <button type="button">Pagado</button>
+                    <div id="plans">
+                        <div id="semanal">
+                            <p>Semanal</p>
+                            <input type="radio" name="" id="">
+                            <input type="text" name="" id="semanal">
+                        </div>
+
+                        <div id="mensual">
+                            <p>Mensual</p>
+                            <input type="radio" name="" id="">
+                            <input type="text" name="" id="semanal">
+                        </div>
+
+                        <div id="elite">
+                            <p>Elite</p>
+                            <input type="radio" name="" id="">
+                            <input type="text" name="" id="semanal">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="gratuito">
+                    <button type="button">Gratuito</button>
+                </div>
+
+                <div id="textoPlan">Planes
+                    <input type="text" name="" id="planes">
+                </div>
+            </div>
+        </div>
+
+        <div id="OrganizacionLocalidades">
+            <div id="titulo">
+                <p>Máximo Participantes</p>
+                <input type="text" id="participantes">
+                <p>Localías y Precios de Eventos</p>
+                <input id="si" type="radio" value="si">
+                <input id="no" type="radio" value="no">
+
+            </div>
+        </div>
+
+        <div id="TablaLocalias">
+            <div id="localia">
+                <p>Número de Localías</p>
+                <input type="text" id="numLocalias">
+            </div>
+
+            <div id="titulo">
+                <p>Localidad</p>
+                <p>Máximo de Participantes</p>
+                <p>Precio</p>
+            </div>
+
+            <div id="tablaDinamica"></div>
+        </div>
+    </div>
+</form>
+
+<script src="/js/events/maps.js"></script>
+<script src="/js/events/tablaLocalias.js"></script>

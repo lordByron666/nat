@@ -1,0 +1,98 @@
+<link rel="stylesheet" href="/css/events/profile.css" type="text/css">
+
+{{#each list}}
+<form action="/profile/{{idClient}}" method="get" id="ocultar">
+    <div id="contenedor">
+        <!-- Aqui empieza el perfil -->
+        <div id="titulo">
+            <p>PERFIL</p>
+        </div>
+
+        <div id="perfil">
+            <div id="datosCliente">
+                <div id="imagen">
+                    <label>Foto Usuario:</label>
+                    <div id="cambioImagen">
+                        <img src="/img/user/{{imagesClient}}" id="imagenPrevisualizacion">
+                    </div>
+                </div>
+
+                <div id="Nombre">
+                    <label>Nombre:</label>
+                    <input name="nameClient" value="{{nameClient}}" id="nombre" readonly></input>
+                </div>
+
+                <div id="Apellido">
+                    <label>Apellido:</label>
+                    <input name="lastNameClient" value="{{lastNameClient}}" id="apellido" readonly></input>
+                </div>
+
+                <div id="Email">
+                    <label>Correo Electrónico:</label>
+                    <input name="emailClient" value="{{emailClient}}" id="email" readonly></input>
+                </div>
+
+                <div id="Celular">
+                    <label>Celular:</label>
+                    <input name="phoneClient" value="{{phoneClient}}" id="celular" readonly></input>
+                </div>
+                {{/each}}
+            </div>
+
+            <div id="botonGuardar">
+                <a href="/">
+                    <button type="button">
+                        <div id="iconoGuardar">
+                            <img src="/img/icons/white/save.png">
+                        </div>Guardar
+                    </button>
+                </a>
+            </div>
+
+            <div id="botonLogout">
+                <a href="/loguot">
+                    <button type="button">
+                        <div id="iconoLogout">
+                            <img src="/img/icons/white/logout.png">
+                        </div>Cerrar Sesión
+                    </button>
+                </a>
+            </div>
+        </div>
+        <!-- Aqui termina el perfil -->
+
+        <!-- Aqui empieza Mis Eventos -->
+        <div id="titulo2">
+            <p>MIS EVENTOS</p>
+        </div>
+
+        <div class="row">
+            {{#each event}}
+            <div id="tarjeta">
+                <div id="imagen">
+                    <img src="/img/events/{{imageEvent}}" alt="">
+                </div>
+
+                <div id="nombre">
+                    <p>{{nameEvent}}</p>
+                </div>
+
+                <div id="description">
+                    <p>{{descriptionEvent}}</p>
+                </div>
+
+                <div id="botonDetalle">
+                    <a href="/events/detail/{{idEvent}}">
+                        <button type="button">
+                            <div id="iconoDetalle">
+                                <img src="/img/icons/white/logout.png">
+                            </div>
+                            <p>Detalle del Evento</p>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</form>
